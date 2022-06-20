@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f5ed;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+  
+  header,
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  form input,
+  form button {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background: white;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    outline: none;
+    color: gray;
+  }
+  form button {
+    color: #a1a1a1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    color: rgb(72, 94, 219);
+  }
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .todo-list {
+    min-width: 40%;
+    list-style: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  
+  .todo {
+    margin: 10px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    transition: all 1s ease;
+    justify-content: space-between;
+    padding: 10px 12px;
+
+    &:hover{
+      .trash-btn{
+        display: inline;
+      }
+    }
+
+    .trash-btn {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .complete-btn{
+      cursor: pointer;
+      border: none;
+      background: none;
+      
+      &-checked{
+        color: #7fa36c;
+        display: block;
+      }
+      &-unchecked{
+        color: rgb(126, 126, 126);
+        display: block;
+      }
+    }
+
+    .hidden{
+      display: none;
+    }
+
+    .trash-btn{
+        color: #a36c6e;
+        display: none;
+    }
+        
+
+  }
+
+  .select{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    select{
+        background-color: white;
+    }
+  }
+  .filter-todo {
+    padding: 10px;
+  }
+  .todo li {
+    flex: 1;
+  }
+  
+
+  .todo-item {
+    padding: 0px 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .fa-trash,
+  .fa-check {
+    pointer-events: none;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  /*CUSTOM SELECTOR */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  
+  /* Custom Select */
+  .select {
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color: #a1a1a1;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 140px;
+  }
+
+  .select::after {
+    content: "⮟";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    background: white;
+    cursor: pointer;
+    pointer-events: none;
+    color: #a1a1a1;
+    font-size: 16px;
+  }
