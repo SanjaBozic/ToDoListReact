@@ -1,4 +1,4 @@
-# ToDo List created with react
+# ToDo List created with React.js
 
 Can add list items, delete items, check or uncheck them, has a filter with active, checked and all items.
 
