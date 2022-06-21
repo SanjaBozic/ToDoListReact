@@ -16,5 +16,5 @@ Used tutorial: https://www.youtube.com/watch?v=pCA4qpQDZD8&list=PLDyQo7g0_nsVHmy
 Separately from tutorial:
 * added FontAwesomeIcon component - for Font Awesome v6.1
 * uuid generated id
-* styling changes
+* styling changes - using scss instead of css
 * different way of getting local storage
