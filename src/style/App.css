@@ -68,10 +68,19 @@ form button:hover {
   justify-content: space-between;
   padding: 10px 12px;
 }
-.todo:hover .trash-btn {
+.todo:hover .trash-btn, .todo:hover .edit-btn {
   display: inline;
+  padding: 0px 10px;
 }
-.todo .trash-btn {
+.todo:hover .save-btn {
+  display: inline;
+  padding: 0px 10px;
+}
+.todo:hover .exit-btn {
+  display: inline;
+  padding: 0px 2px;
+}
+.todo .trash-btn, .todo .edit-btn, .todo .exit-btn, .todo .save-btn {
   border: none;
   background: none;
   cursor: pointer;
@@ -90,10 +99,22 @@ form button:hover {
   display: block;
 }
 .todo .hidden {
+  display: none !important;
+}
+.todo .edit-btn {
+  color: rgb(72, 94, 219);
   display: none;
 }
 .todo .trash-btn {
   color: #a36c6e;
+  display: none;
+}
+.todo .exit-btn {
+  color: #a36c6e;
+  display: none;
+}
+.todo .save-btn {
+  color: rgb(126, 126, 126);
   display: none;
 }
 
@@ -117,6 +138,12 @@ form button:hover {
   width: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.todo-input-edit {
+  width: 100%;
+  margin-left: 15px;
+  outline: none;
 }
 
 .fa-trash,

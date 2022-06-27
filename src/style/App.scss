@@ -66,12 +66,23 @@
     padding: 10px 12px;
 
     &:hover{
-      .trash-btn{
+      .trash-btn, .edit-btn{
         display: inline;
+        padding: 0px 10px;
+      }
+
+      .save-btn{
+        display: inline;
+        padding: 0px 10px;
+      }
+
+      .exit-btn{
+        display: inline;
+        padding: 0px 2px;
       }
     }
 
-    .trash-btn {
+    .trash-btn, .edit-btn, .exit-btn, .save-btn {
         border: none;
         background: none;
         cursor: pointer;
@@ -93,15 +104,29 @@
     }
 
     .hidden{
+      display: none !important;
+    }
+
+    .edit-btn{
+      color: rgb(72, 94, 219);
       display: none;
     }
 
     .trash-btn{
-        color: #a36c6e;
-        display: none;
+      color: #a36c6e;
+      display: none;
+    }
+
+    .exit-btn{
+      color: #a36c6e;
+      display: none;
+    }
+
+    .save-btn{
+      color: rgb(126, 126, 126);
+      display: none;
     }
         
-
   }
 
   .select{
@@ -123,6 +148,12 @@
     width: 100%;
     cursor: pointer;
     transition: all 0.3s ease;
+  }
+
+  .todo-input-edit{
+    width: 100%;
+    margin-left: 15px;
+    outline: none;
   }
   
   .fa-trash,
