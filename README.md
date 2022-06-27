@@ -6,6 +6,7 @@ The todo list can for now:
 * check or uncheck them
 * has a filter with active, checked and all items
 * local storage of items in the list
+* edit/delete already added items
 
 The delete icon can be seen and clicked on only on hover.
 
